@@ -15,6 +15,8 @@ function blurring() {
     loadText.innerText = `${load}%`
 
     bg.style.filter = `blur(${50 - (load / 2)}px)`
+
+    loadText.style.opacity = `${load / 100}%`
 }
 
 
