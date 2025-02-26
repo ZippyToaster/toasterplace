@@ -28,4 +28,5 @@ body {
 .loading-text {
     font-size: 50px;
     color: white;
+    opacity: .5;
 }
