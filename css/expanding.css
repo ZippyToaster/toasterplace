@@ -24,4 +24,26 @@ body {
     margin: 10px;
     border-radius: 10px;
     flex: 1;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    transition: all 1s ease-in;
+}
+
+.panel h3 {
+    font-size: 24;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+    transition: opacity .4s ease-in .6s;
+}
+
+.panel.active {
+    flex: 10;
+}
+
+.panel.active h3 {
+    opacity: 1;
 }
