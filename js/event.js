@@ -40,6 +40,12 @@ document.addEventListener('keyup', (event) => {
     else if (event.key == 'ArrowRight') {
         positionX -= 10
     }
+    else if (event.key == 'j') {
+        element4.style.width = "300px"
+        element4.style.height = "50px"
+        element4.innerHTML = "Click me to make me small. <br> Press 'j' to bring me back"
+        element4.style.opacity = 1
+    }
 
 
     element3.style.top = `${positionY}px`
@@ -49,6 +55,6 @@ document.addEventListener('keyup', (event) => {
 element4.addEventListener('click', () => {
     element4.style.width = "10px"
     element4.style.height = "10px"
-    element4.InnerHTML = ""
+    element4.innerHTML = ""
     element4.style.opacity = .3
 })
