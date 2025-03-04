@@ -22,7 +22,6 @@ element2.addEventListener('mouseout', () => {
     element2.style.backgroundColor = "#BB33BB"
 })
 
-element3.addEventListener('mouseout', () => {
-    element2.style.color = "white"
-    element2.style.backgroundColor = "#BB33BB"
+document.AddEventListener('keyup', (event) => {
+    console.log(event.key)
 })
