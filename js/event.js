@@ -58,3 +58,10 @@ element4.addEventListener('click', () => {
     element4.innerHTML = ""
     element4.style.opacity = .3
 })
+
+const list = ['running', 'paused']
+let index = 0
+
+element5.addEventListener('click', () => {
+    element5.style.animationPlayState = list[index]
+})
