@@ -45,3 +45,10 @@ document.addEventListener('keyup', (event) => {
     element3.style.top = `${positionY}px`
     element3.style.right = `${positionX}px`
 })
+
+element4.addEventListener('click', () => {
+    element4.style.width = "10px"
+    element4.style.height = "10px"
+    element4.InnerHTML = ""
+    element4.style.opacity = .3
+})
