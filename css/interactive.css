@@ -26,5 +26,6 @@ body {
 }
 
 .button.active {
-    
+    width: 302.5px;
+    height: 66px;
 }
