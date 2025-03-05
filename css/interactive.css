@@ -22,7 +22,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    transition: all .5s ease-out;
+    transition: all .125s ease-out;
 }
 
 .button.active {
