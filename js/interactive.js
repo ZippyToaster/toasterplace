@@ -7,7 +7,7 @@ function getRandomNumb(maxnumb) {
 button1.addEventListener('click', () => {
     button1.classList.toggle('active')
     button1.style.top = `${getRandomNumb(500)}px`
-    button1.style.right = `${getRandomNumb(500)}px`
+    button1.style.right = `${getRandomNumb(1000)}px`
     setTimeout(() => {
         button1.classList.toggle('active')
       }, 125)
