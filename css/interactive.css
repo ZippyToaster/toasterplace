@@ -8,19 +8,19 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
-    background-color: #555559;
+    background-color: #666669;
 }
 
 .button {
-    background-color: #BB33BB;
+    background-color: #5555BB;
     color: white;
-    width: 300px;
-    height: 50px;
+    width: 275px;
+    height: 60px;
     padding: 10px;
     margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
