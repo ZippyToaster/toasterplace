@@ -11,10 +11,9 @@ button1.addEventListener('click', () => {
     button1.classList.toggle('active')
     posX = getRandomNumb(1000)
     posY = getRandomNumb(500)
-    button1.style.top = `${posY}px`
     button1.style.right = `${posX}px`
+    button1.style.top = `${posY}px`
     setTimeout(() => {
         button1.classList.toggle('active')
-      }, 125)
-    console.log(getRandomNumb(100))
+    }, 125)
 })
