@@ -19,11 +19,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    margin: 10px;
     position: absolute;
     top: 0px;
-    right: 495px;
+    padding: 10px;
+    margin: 10px;
     border-radius: 25px;
     transition: all .125s ease-out;
 }
@@ -40,7 +39,7 @@ body {
     margin: 10px;
     position: absolute;
     top: 250px;
-    right: 525px;
+    right: 535px;
     border-radius: 15px;
     transition: all .125s ease-out;
 }
