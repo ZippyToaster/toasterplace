@@ -12,7 +12,7 @@ body {
 }
 
 .title {
-    background-color: #5555BB;
+    background-color: #000000;
     color: white;
     width: 350px;
     height: 60px;
@@ -24,7 +24,7 @@ body {
     position: absolute;
     top: 0px;
     right: 495px;
-    border-radius: 15px;
+    border-radius: 25px;
     transition: all .125s ease-out;
 }
 
