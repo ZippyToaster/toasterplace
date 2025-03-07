@@ -11,6 +11,23 @@ body {
     background-color: #666669;
 }
 
+.title {
+    background-color: #5555BB;
+    color: white;
+    width: 350px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    position: absolute;
+    top: 0px;
+    right: 495px;
+    border-radius: 15px;
+    transition: all .125s ease-out;
+}
+
 .button {
     background-color: #5555BB;
     color: white;
