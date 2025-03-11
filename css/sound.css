@@ -4,5 +4,10 @@
 }
 
 body {
-    background-color: rgb(100, 0, 160)
+    background-color: rgb(100, 0, 160);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
 }
