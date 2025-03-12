@@ -18,6 +18,10 @@ body {
     margin: 0 auto;
 }
 
-.logo {
-
+.nav {
+    position: fixed;
+    background-color: rgb(33, 33, 33);
+    top: 0;
+    left: 0;
+    right: 0;
 }
