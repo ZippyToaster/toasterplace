@@ -20,7 +20,7 @@ body {
 
 .nav {
     position: fixed;
-    background-color: rgb(33, 33, 33);
+    background-color: rgb(38, 38, 44);
     top: 0;
     left: 0;
     right: 0;
@@ -31,4 +31,11 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
 }
