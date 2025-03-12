@@ -43,4 +43,14 @@ body {
 .nav a {
     color: white;
     padding: 7px 15px;
+    text-decoration: none;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
 }
