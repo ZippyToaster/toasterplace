@@ -7,4 +7,12 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Inconsolata', sans-serif;
+    color: rgb(33, 33, 33);
+    padding-bottom: 50px;
+}
 
+.container {
+    max-width: 1200px;
+}
