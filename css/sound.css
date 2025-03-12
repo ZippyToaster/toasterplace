@@ -20,4 +20,6 @@ body {
     padding: 10px 15px;
     margin: 5px;
     border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
 }
