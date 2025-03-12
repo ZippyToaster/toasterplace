@@ -47,6 +47,10 @@ body {
 }
 
 .hero {
+    background-image: url('../images/cat.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
     height: 100vh;
     display: flex;
     align-items: center;
