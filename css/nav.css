@@ -82,4 +82,13 @@ body {
     letter-spacing: 1px;
 }
 
+.content h2, .content h3 {
+    font-size: 150%;
+    margin: 20px 0;
+}
 
+.content p {
+    color: rgb(77, 77, 77);
+    line-height: 30px;
+    letter-spacing: 1.2px;
+}
