@@ -46,7 +46,25 @@ body {
     text-decoration: none;
 }
 
+.nav.active {
+    background-color: rgb(255, 255, 255);
+}
+
+.nav.active a {
+    color: black;
+}
+
+.nav.active .container {
+    padding: 10px 0;
+}
+
+.nav a.current, .nav a:hover {
+    color: #C0392B;
+    font-weight: bold;
+}
+
 .hero {
+    position: relative;
     background-image: url('../images/cat.avif');
     background-repeat: no-repeat;
     background-size: cover;
@@ -68,13 +86,13 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .35);
+    z-index: -1;
 }
 
 .hero h1 {
     font-size: 46px;
     margin: -20px 0 20px;
-    z-index: 100;
 }
 
 .hero p {
