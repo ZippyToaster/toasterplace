@@ -41,7 +41,6 @@ function increaseTime() {
     }
     timeEl.innerHTML = `Time: ${m}:${s}`
     seconds += 1
-    getRandomLocation()
 }
 
 function createInsect() {
