@@ -58,6 +58,8 @@ function createInsect() {
 
 function catchInsect() {
     increaseScore()
+
+    this.classList.add('caught')
 }
 
 function increaseScore() {
