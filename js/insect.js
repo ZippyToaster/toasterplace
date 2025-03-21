@@ -52,6 +52,10 @@ function createInsect() {
     insect.style.top = `${y}px`
     insect.style.left = `${x}px`
     game_container.appendChild(insect)
+
+    insect.addEventListener('click', () => {
+        scoreEl.innerHTML = `Score:`
+    })
 }
 
 function getRandomLocation() {
