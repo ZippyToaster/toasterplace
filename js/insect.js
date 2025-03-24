@@ -69,6 +69,9 @@ function addInsects() {
 
 function increaseScore() {
     score += 1
+    if (score >= 10) {
+        message.classList.add('visible')
+    }
     scoreEl.innerHTML = `Score: ${score}`
 }
 
@@ -80,11 +83,7 @@ function getRandomLocation() {
     return {x, y}
 }
 
-// while (true) {
-//     if (score >= 10) {
-//         message.classList.add('visible')
-//     }
-// }
+
 
 
 // function getRandomNumb(maxnumb) {
