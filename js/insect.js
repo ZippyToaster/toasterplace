@@ -80,9 +80,9 @@ function getRandomLocation() {
     return {x, y}
 }
 
-if (score >= 10) {
-    
-}
+// if (score >= 10) {
+//     message.classList.add('visible')
+// }
 
 // function getRandomNumb(maxnumb) {
 //     return Math.floor(Math.random() * maxnumb);
