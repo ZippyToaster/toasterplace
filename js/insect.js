@@ -80,6 +80,8 @@ function getRandomLocation() {
     return {x, y}
 }
 
+
+
 // function getRandomNumb(maxnumb) {
 //     return Math.floor(Math.random() * maxnumb);
 // }
