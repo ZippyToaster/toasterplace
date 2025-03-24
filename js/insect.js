@@ -80,7 +80,9 @@ function getRandomLocation() {
     return {x, y}
 }
 
-
+if (score >= 10) {
+    
+}
 
 // function getRandomNumb(maxnumb) {
 //     return Math.floor(Math.random() * maxnumb);
