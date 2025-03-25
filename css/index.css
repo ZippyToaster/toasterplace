@@ -20,16 +20,16 @@ body {
     position: absolute;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 70%;
     height: 90%;
     border-radius: 10px;
 }
 
 .container ul {
-    list-style-type: none;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    margin: 10px;
+    line-height: 50px;
+    opacity: 0;
 }
 
 .container a {
