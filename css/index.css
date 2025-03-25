@@ -29,11 +29,12 @@ body {
     list-style-type: none;
     align-items: center;
     justify-content: center;
+    margin: 10px;
 }
 
 .container a {
     color: white;
     padding: 7px 15px;
     text-decoration: none;
-    font-size: 150%;
+    font-size: 200%;
 }
