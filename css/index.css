@@ -11,6 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
+    font-family: 'Inconsolata', sans-serif;
 }
 
 .container {
@@ -27,4 +28,10 @@ body {
     list-style-type: none;
     align-items: center;
     justify-content: center;
+}
+
+.container a {
+    color: black;
+    padding: 7px 15px;
+    text-decoration: none;
 }
