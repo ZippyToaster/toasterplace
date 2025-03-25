@@ -14,4 +14,9 @@ body {
 .container {
     display: flex;
     width: 90vw;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
 }
+
+
