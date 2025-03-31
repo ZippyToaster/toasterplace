@@ -40,7 +40,38 @@ body {
     position: relative;
     top: 0;
     right: 50px;
-    transition: transform 1s ease;
+    transition: transform 1s ease-in;
+}
+
+.homebtn {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    background-color: rgb(33, 33, 44);
+    border-radius: 150px;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    margin: 11px;
+    z-index: 10;
+}
+
+.homeimg:hover {
+    cursor: pointer;
+    width: 75px;
+    height: 75px;
+    margin: 12px;
+}
+
+.homeimg {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    margin: 18px;
+    transition: all .1s ease-out;
 }
 
 .search.active .input {
