@@ -60,7 +60,25 @@ body {
     background-color: grey;
     position: absolute;
     bottom: 100px;
-    left: 625px;
+    left: 575px;
+}
+
+.building4 {
+    height: 300px;
+    width: 150px;
+    background-color: grey;
+    position: absolute;
+    bottom: 100px;
+    right: 225px;
+}
+
+.building5 {
+    height: 300px;
+    width: 150px;
+    background-color: grey;
+    position: absolute;
+    bottom: 100px;
+    right: 25px;
 }
 
 .billboard {
