@@ -93,9 +93,13 @@ body {
 }
 
 li {
+    position: relative;
+    display: block;
+    width: 50%;
+    float: left;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 .panel {
