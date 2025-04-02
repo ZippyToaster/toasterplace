@@ -89,7 +89,7 @@ body {
 .container ul {
     justify-content: space-between;
     align-items: center;
-    line-height: 40px;
+    line-height: 35px;
 }
 
 .panel {
@@ -107,11 +107,11 @@ body {
     color: white;
     padding: 7px 15px;
     text-decoration: none;
-    font-size: 150%;
+    font-size: 135%;
 }
 
 a:hover {
-    font-size: 175%;
+    font-size: 155%;
     font-weight: bold;
 }
 
