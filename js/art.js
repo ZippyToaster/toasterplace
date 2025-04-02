@@ -1,9 +1,12 @@
 const car = document.getElementById('car')
 
-car1move()
+setInterval(car1move, 100)
 
 const carspeed1 = 100
 
 function car1move() {
-    car.style.left += `${carspeed1}px`
+    setTimeout( () => {
+        car.style.left += `${carspeed1}px`
+     }, 100)
+
 }
