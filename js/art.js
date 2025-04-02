@@ -1,12 +1,15 @@
-const car = document.querySelector('car')
+const car = document.querySelector('.car')
 
 setInterval(car1move, 100)
 
-const carspeed1 = 100
+const carspeed1 = 10
+constcar1pos = 410;
 
 function car1move() {
     setTimeout( () => {
-        car.style.left += `${carspeed1}px`
+        constcar1pos += 10
+        console.log(constcar1pos)
+        car.style.left += `${constcar1pos}px`
      }, 100)
 
 }
