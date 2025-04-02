@@ -1,7 +1,9 @@
-const car1 = getElementById('.car1')
+const car = document.getElementById('car')
 
 car1move()
 
+const carspeed1 = 100
+
 function car1move() {
-    car1.style.left += `${100}px`
+    car.style.left += `${carspeed1}px`
 }
