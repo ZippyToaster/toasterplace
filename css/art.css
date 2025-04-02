@@ -1,11 +1,63 @@
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 170, 255);
+}
 
 .sun {
-    height: 300px;
-    width: 300px;
+    height: 150px;
+    width: 150px;
     background-color: yellow;
     border-radius: 50%;
     position: absolute;
     top: 30px;
     right: 30px;
+}
+
+.ground {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(100, 100, 100);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.building1 {
+    height: 300px;
+    width: 150px;
+    background-color: grey;
+    position: absolute;
+    bottom: 100px;
+    left: 25px;
+}
+
+.building2 {
+    height: 300px;
+    width: 150px;
+    background-color: grey;
+    position: absolute;
+    bottom: 100px;
+    left: 225px;
+}
+
+.window {
+    height: 200px;
+    width: 35px;
+    background-color: rgb(0, 220, 255);
+    position: absolute;
+    top: 50px;
+    left: 25px;
+}
+
+.window2 {
+    height: 200px;
+    width: 35px;
+    background-color: rgb(0, 220, 255);
+    position: absolute;
+    top: 50px;
+    right: 25px;
 }
