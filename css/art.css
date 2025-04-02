@@ -151,7 +151,7 @@ body {
     background-color: red;
     position: absolute;
     bottom: 125px;
-    left: 400px;
+    left: 410px;
     z-index: 5;
 }
 
@@ -161,7 +161,7 @@ body {
     background-color: blue;
     position: absolute;
     bottom: 125px;
-    left: 150px;
+    left: 160px;
     z-index: 5;
 }
 
@@ -171,7 +171,17 @@ body {
     background-color: green;
     position: absolute;
     bottom: 125px;
-    left: 650px;
+    left: 660px;
+    z-index: 5;
+}
+
+.car4 {
+    height: 50px;
+    width: 75px;
+    background-color: purple;
+    position: absolute;
+    bottom: 125px;
+    left: 910px;
     z-index: 5;
 }
 
