@@ -26,6 +26,16 @@ body {
     left: 0;
 }
 
+.road {
+    height: 10px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 95px;
+    left: 0;
+    z-index: 2;
+}
+
 .building1 {
     height: 300px;
     width: 150px;
@@ -60,4 +70,60 @@ body {
     position: absolute;
     top: 50px;
     right: 25px;
+}
+
+.car {
+    height: 50px;
+    width: 75px;
+    background-color: red;
+    position: absolute;
+    bottom: 125px;
+    left: 400px;
+}
+
+.car2 {
+    height: 50px;
+    width: 75px;
+    background-color: blue;
+    position: absolute;
+    bottom: 125px;
+    left: 150px;
+}
+
+.car3 {
+    height: 50px;
+    width: 75px;
+    background-color: green;
+    position: absolute;
+    bottom: 125px;
+    left: 650px;
+}
+
+.wheel1 {
+    height: 35px;
+    width: 35px;
+    background-color: rgb(25, 25, 25);
+    position: absolute;
+    border-radius: 50%;
+    bottom: -20px;
+    left: -10px;
+}
+
+.wheel2 {
+    height: 35px;
+    width: 35px;
+    background-color: rgb(25, 25, 25);
+    position: absolute;
+    border-radius: 50%;
+    bottom: -20px;
+    right: -10px;
+}
+
+.carwindow {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(0, 220, 255);
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }
