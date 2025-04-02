@@ -1,4 +1,4 @@
-const car = document.getElementById('car')
+const car = document.querySelector('car')
 
 setInterval(car1move, 100)
 
