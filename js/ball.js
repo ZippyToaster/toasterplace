@@ -3,6 +3,12 @@ const ballRadius = 30
 const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
 
+
+function moveBall() {
+    ball.style.left = 
+}
+
+
 createBall()
 
 function createBall() {
@@ -15,3 +21,4 @@ function createBall() {
     ball.style.top = `${windowHeight / 2 - ballRadius}px`
     ball.style.left = `${windowWidth / 2 - ballRadius}px`
 }
+
