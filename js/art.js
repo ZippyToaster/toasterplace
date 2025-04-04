@@ -9,7 +9,8 @@ function car1move() {
     setTimeout( () => {
         constcar1pos += 10
         console.log(constcar1pos)
-        car.style.left += `${constcar1pos}px`
-     }, 100)
+        //console.log(car.style.left += `${constcar1pos}px`)
+        car.style.left = `${constcar1pos}px`
+     }, 10)
 
 }
