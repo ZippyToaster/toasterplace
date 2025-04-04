@@ -17,7 +17,6 @@ function car1move() {
     setTimeout( () => {
         constcar1pos += 2.5
         console.log(constcar1pos)
-        //console.log(car.style.left += `${constcar1pos}px`)
         if (constcar1pos >= 1400) {
             constcar1pos = -200
             car.style.left = -200
