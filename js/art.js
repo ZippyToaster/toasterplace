@@ -15,7 +15,7 @@ constcar4pos = 910;
 
 function car1move() {
     setTimeout( () => {
-        constcar1pos += 2
+        constcar1pos += 2.5
         console.log(constcar1pos)
         //console.log(car.style.left += `${constcar1pos}px`)
         if (constcar1pos >= 1400) {
@@ -29,7 +29,7 @@ function car1move() {
 
 function car2move() {
     setTimeout( () => {
-        constcar2pos += 1.5
+        constcar2pos += 1.4
         if (constcar2pos >= 1400) {
             constcar2pos = -200
             car2.style.left = -200
@@ -41,7 +41,7 @@ function car2move() {
 
 function car3move() {
     setTimeout( () => {
-        constcar3pos += 2.5
+        constcar3pos += 3.3
         if (constcar3pos >= 1400) {
             constcar3pos = -200
             car3.style.left = -200

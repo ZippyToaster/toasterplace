@@ -4,12 +4,16 @@ const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
 let ballXPosition = windowWidth / 2 - ballRadius
 let ballSpeed = 5
+let ballXDirection = 1
 
 setInterval(moveBall, 10)
 
 function moveBall() {
-    ballXPosition += ballSpeed
+    ballXPosition += ballSpeed * ballXDirection
     ball.style.left = `${ballXPosition}px`
+    if (ballXPosition > windowWidth) {
+        ballXDirection = ballXDirection * -1
+    }
 }
 
 
