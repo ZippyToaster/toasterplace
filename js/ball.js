@@ -2,10 +2,14 @@ const ball = document.createElement('div')
 const ballRadius = 30
 const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
+let ballXPosition = windowWidth / 2 - ballRadius
+let ballSpeed = 5
 
+setInterval(moveBall, 10)
 
 function moveBall() {
-    ball.style.left = 
+    ballXPosition += ballSpeed
+    ball.style.left = `${ballXPosition}px`
 }
 
 
