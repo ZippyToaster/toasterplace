@@ -10,8 +10,8 @@ function car1move() {
         constcar1pos += 10
         console.log(constcar1pos)
         //console.log(car.style.left += `${constcar1pos}px`)
-        if (car.style.left > 1400) {
-            
+        if (car.style.left >= 1400) {
+            car.style.left = -200
         }
         car.style.left = `${constcar1pos}px`
      }, 10)
