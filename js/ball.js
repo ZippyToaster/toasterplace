@@ -18,7 +18,10 @@ let LPaddleXPosition = 70
 
 let score = 0 // display score and increase score by 1 every time the ball hits the paddle
 let level = 1 // display level and increase the level by 1 every time the score increases by 10
-              // as the levels increase, increase the ball speed
+// as the levels increase, increase the ball speed
+// if the ball gets past your paddle, end the game
+// make the ball stop/disappear and then let the user know the game is over
+// optional: sound fx, background music
 
 
 function moveBall() {
