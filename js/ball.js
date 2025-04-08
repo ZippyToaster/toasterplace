@@ -8,13 +8,17 @@ const ballRadius = 30
 const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
 let ballXPosition = windowWidth / 2 - ballRadius
-let ballSpeed = 10
+let ballSpeed = 5
 let ballXDirection = 1
 let ballYPosition = windowHeight / 2 - ballRadius
 let ballYDirection = 1
 let LPaddleYPosition = windowHeight / 2 - LPaddleHeight / 2
 let LPaddleSpeed = 10
 let LPaddleXPosition = 70
+
+let score = 0 // display score and increase score by 1 every time the ball hits the paddle
+let level = 1 // display level and increase the level by 1 every time the score increases by 10
+              // as the levels increase, increase the ball speed
 
 
 function moveBall() {
@@ -46,6 +50,7 @@ function moveBall() {
         (ballLeft <= LPaddleRight) &&
         (ballXDirection == -1)
     ) {
+        score += 1
         ballXDirection = ballXDirection * -1
     }
 }
