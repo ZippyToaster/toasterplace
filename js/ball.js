@@ -85,7 +85,10 @@ function createLPaddle() {
 }
 
 function createDescription() {
-    scoreboard.style.
+    scoreboard.style.fontSize = "40px"
+    scoreboard.style.margin = "10px"
+    scoreboard.style.top = "0px"
+    scoreboard.style.left = "100px"
     scoreboard.innerHTML = score
 }
 
