@@ -2,10 +2,10 @@ const ball = document.createElement('div')
 document.body.appendChild(ball)
 const LPaddle = document.createElement('div')
 document.body.appendChild(LPaddle)
-const scoreboard = document.createElement('div')
-document.body.appendChild(scoreboard)
 const scoreholder = document.createElement('p')
 document.body.appendChild(scoreholder)
+const levelholder = document.createElement('p')
+document.body.appendChild(levelholder)
 let LPaddleWidth = 15
 let LPaddleHeight = 150
 const ballRadius = 30
@@ -57,7 +57,11 @@ function moveBall() {
         (ballLeft <= LPaddleRight) &&
         (ballXDirection == -1)
     ) {
-        score += 1
+        score += 5
+        scoreholder.innerHTML = `Score: ${score}`
+        if (score % 10 == 0) {
+            changeLevel()
+        }
         ballXDirection = ballXDirection * -1
     }
 }
@@ -87,12 +91,27 @@ function createLPaddle() {
 }
 
 function createDescription() {
-    scoreboard.style.position = "absolute"
-    scoreholder.style.fontSize = "40px"
+    scoreholder.style.position = "absolute"
+    scoreholder.style.fontSize = "30px"
     scoreholder.style.margin = "10px"
-    scoreboard.style.top = "0px"
-    scoreboard.style.right = "100px"
-    scoreholder.innerHTML = score
+    scoreholder.style.top = "0px"
+    scoreholder.style.right = "50px"
+    scoreholder.innerHTML = `Score: ${score}`
+
+    levelholder.style.position = "absolute"
+    levelholder.style.fontSize = "30px"
+    levelholder.style.margin = "10px"
+    levelholder.style.top = "50px"
+    levelholder.style.right = "50px"
+    levelholder.innerHTML = `Level: ${level}`
+}
+
+function changeLevel() {
+    level += 1
+    levelholder.innerHTML = `Level: ${level}`
+    ballSpeed += 1
+    LPaddleHeight -= 10
+    LPaddle.style.height = `${LPaddleHeight}px`
 }
 
 wKey = false
