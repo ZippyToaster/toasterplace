@@ -2,7 +2,7 @@ const ball = document.createElement('div')
 document.body.appendChild(ball)
 const LPaddle = document.createElement('div')
 document.body.appendChild(LPaddle)
-const scoreboard = document.createElement('div')
+const scoreboard = document.createElement('p')
 document.body.appendChild(scoreboard)
 let LPaddleWidth = 15
 let LPaddleHeight = 150
@@ -63,6 +63,7 @@ function moveBall() {
 
 createBall()
 createLPaddle()
+createDescription()
 
 function createBall() {
     ball.style.height = `${2 * ballRadius}px`
@@ -84,7 +85,8 @@ function createLPaddle() {
 }
 
 function createDescription() {
-
+    scoreboard.style.
+    scoreboard.innerHTML = score
 }
 
 wKey = false
