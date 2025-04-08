@@ -110,8 +110,10 @@ function changeLevel() {
     level += 1
     levelholder.innerHTML = `Level: ${level}`
     ballSpeed += 1
-    LPaddleHeight -= 10
+    if (level % 2 == 1) {
+            LPaddleHeight -= 10
     LPaddle.style.height = `${LPaddleHeight}px`
+    }
 }
 
 wKey = false
