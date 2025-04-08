@@ -2,8 +2,10 @@ const ball = document.createElement('div')
 document.body.appendChild(ball)
 const LPaddle = document.createElement('div')
 document.body.appendChild(LPaddle)
-const scoreboard = document.createElement('p')
+const scoreboard = document.createElement('div')
 document.body.appendChild(scoreboard)
+const scoreholder = document.createElement('p')
+document.body.appendChild(scoreholder)
 let LPaddleWidth = 15
 let LPaddleHeight = 150
 const ballRadius = 30
@@ -85,11 +87,12 @@ function createLPaddle() {
 }
 
 function createDescription() {
-    scoreboard.style.fontSize = "40px"
-    scoreboard.style.margin = "10px"
+    scoreboard.style.position = "absolute"
+    scoreholder.style.fontSize = "40px"
+    scoreholder.style.margin = "10px"
     scoreboard.style.top = "0px"
-    scoreboard.style.left = "100px"
-    scoreboard.innerHTML = score
+    scoreboard.style.right = "100px"
+    scoreholder.innerHTML = score
 }
 
 wKey = false
