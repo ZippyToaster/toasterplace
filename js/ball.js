@@ -14,6 +14,7 @@ let ballYPosition = windowHeight / 2 - ballRadius
 let ballYDirection = 1
 let LPaddleYPosition = windowHeight / 2 - LPaddleHeight / 2
 let LPaddleSpeed = 50
+let LPaddleXPosition = 70
 
 setInterval(moveBall, 10)
 
@@ -34,6 +35,12 @@ function moveBall() {
     // of the ball is greater than or equal to the bottom of the paddle and the left
     // side of the ball is less than or equal to the right side of the paddle, then
     // change ball direction
+    let ballTop = ballYPosition
+    let ballBottom = ballYPosition + 2 * ballRadius
+    let ballLeft = ballXPosition
+    let LPaddleTop = LPaddleYPosition
+    let LPaddleBottom = LPaddleYPosition + LPaddleHeight
+    let LPaddleRight = LPaddleXPosition + LPaddleWidth
     if (ball.style.left <= LPaddle.style.left) {
         console.log(ball.style.left)
         console.log(LPaddle.style.left)
@@ -63,7 +70,7 @@ function createLPaddle() {
     LPaddle.style.width = `${LPaddleWidth}px`
     LPaddle.style.backgroundColor = 'blue'
     LPaddle.style.position = 'absolute'
-    LPaddle.style.left = "50px"
+    LPaddle.style.left = "70px"
     LPaddle.style.top = `${windowHeight / 2 - LPaddleHeight / 2}px`
 }
 
