@@ -13,10 +13,11 @@ let ballXDirection = 1
 let ballYPosition = windowHeight / 2 - ballRadius
 let ballYDirection = 1
 let LPaddleYPosition = windowHeight / 2 - LPaddleHeight / 2
-let LPaddleSpeed = 50
+let LPaddleSpeed = 7
 let LPaddleXPosition = 70
 
 setInterval(moveBall, 10)
+setInterval(moveLPaddle, 10)
 
 function moveBall() {
     ballXPosition += ballSpeed * ballXDirection
@@ -74,25 +75,58 @@ function createLPaddle() {
     LPaddle.style.top = `${windowHeight / 2 - LPaddleHeight / 2}px`
 }
 
-document.addEventListener('keyup', (event) => {
+wKey = false
+sKey = false
+
+document.addEventListener('keydown', (event) => {
     if (event.key == 'w') {
-        if (LPaddleYPosition <= 0) {
-            LPaddleYPosition = 0
-        }
-        else {
-            LPaddleYPosition -= LPaddleSpeed
-        }
+        wKey = true
+    }
+    if (event.key == 's') {
+        sKey = true
+    }
+})
+
+document.addEventListener('keyup', (event) => {
+    if (event.key == 'w')
+    {
+        wKey = false
+    }
+    if (event.key == 's') {
+        sKey = false
+    }
+})
+
+function moveLPaddle() {
+    if (wKey == true && LPaddleYPosition > 0) {
+        LPaddleYPosition = LPaddleYPosition - LPaddleSpeed
+    }
+    if (sKey == true && LPaddleYPosition < windowHeight - LPaddleHeight) {
+        LPaddleYPosition = LPaddleYPosition + LPaddleSpeed
     }
 
-    if (event.key == 's') {
-        if (LPaddleYPosition >= windowHeight - LPaddleHeight) {
-            LPaddleYPosition = windowHeight - LPaddleHeight
-        }
-        else {
-            LPaddleYPosition += LPaddleSpeed
-        }
-    }
     LPaddle.style.top = `${LPaddleYPosition}px`
-})
+}
+
+// document.addEventListener('keyup', (event) => {
+//     if (event.key == 'w') {
+//         if (LPaddleYPosition <= 0) {
+//             LPaddleYPosition = 0
+//         }
+//         else {
+//             LPaddleYPosition -= LPaddleSpeed
+//         }
+//     }
+
+//     if (event.key == 's') {
+//         if (LPaddleYPosition >= windowHeight - LPaddleHeight) {
+//             LPaddleYPosition = windowHeight - LPaddleHeight
+//         }
+//         else {
+//             LPaddleYPosition += LPaddleSpeed
+//         }
+//     }
+//     LPaddle.style.top = `${LPaddleYPosition}px`
+// })
 
 
