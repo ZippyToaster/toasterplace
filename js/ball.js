@@ -2,6 +2,8 @@ const ball = document.createElement('div')
 document.body.appendChild(ball)
 const LPaddle = document.createElement('div')
 document.body.appendChild(LPaddle)
+const scoreboard = document.createElement('div')
+document.body.appendChild(scoreboard)
 let LPaddleWidth = 15
 let LPaddleHeight = 150
 const ballRadius = 30
@@ -79,6 +81,10 @@ function createLPaddle() {
     LPaddle.style.position = 'absolute'
     LPaddle.style.left = "70px"
     LPaddle.style.top = `${windowHeight / 2 - LPaddleHeight / 2}px`
+}
+
+function createDescription() {
+
 }
 
 wKey = false
