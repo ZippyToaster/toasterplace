@@ -6,8 +6,10 @@ const scoreholder = document.createElement('p')
 document.body.appendChild(scoreholder)
 const levelholder = document.createElement('p')
 document.body.appendChild(levelholder)
-const gameover = document.createElement('p')
+const gameover = document.createElement('div')
 document.body.appendChild(gameover)
+const gameovertext = document.createElement('p')
+gameover.appendChild(gameovertext)
 let LPaddleWidth = 15
 let LPaddleHeight = 170
 const ballRadius = 30
@@ -123,7 +125,8 @@ function createGameover() {
     gameover.style.left = "0px"
     gameover.style.alignItems = "center"
     gameover.style.justifyContent = "center"
-    gameover.innerHTML = `Score: ${score}`
+    gameover.style.backgroundColor = "blue"
+    gameovertext.innerHTML = `Score: ${score}`
 }
 
 function changeLevel() {
