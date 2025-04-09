@@ -52,7 +52,7 @@ function moveBall() {
     }
 
     if (ballXPosition < 0){
-        running = false
+        //running = false
     }
 
     // if top of the ball is less than or equal to the top of the paddle and the bottom
@@ -71,7 +71,7 @@ function moveBall() {
         (ballLeft <= LPaddleRight) &&
         (ballXDirection == -1)
     ) {
-        score += 1
+        score += 10
         scoreholder.innerHTML = `Score: ${score}`
         if (score % 10 == 0) {
             changeLevel()
@@ -145,7 +145,7 @@ function changeLevel() {
     ballSpeed += 1
     if (level % 2 == 1) {
         LPaddleHeight -= 10
-        LPaddleSpeed += 1
+        LPaddleSpeed += 5
         LPaddle.style.height = `${LPaddleHeight}px`
     }
 }
