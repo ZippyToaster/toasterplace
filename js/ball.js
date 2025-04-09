@@ -128,7 +128,7 @@ function createGameover() {
     gameover.style.alignItems = "center"
     gameover.style.justifyContent = "center"
     gameover.style.backgroundColor = "blue"
-    gameovertext.style.fontFamily = "Impact,Charcoal,sans-serif"
+    gameovertext.style.fontFamily = "Inconsolata,Charcoal,sans-serif"
     gameovertext.innerHTML = `Score: ${score}`
 }
 
