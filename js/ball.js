@@ -23,7 +23,7 @@ let ballYDirection = 1
 let LPaddleYPosition = windowHeight / 2 - LPaddleHeight / 2
 let LPaddleSpeed = 10
 let LPaddleXPosition = 70
-let running = true
+let running = false
 
 document.body.style.alignItems = "center"
 document.body.style.justifyContent = "center"
@@ -124,10 +124,10 @@ function createGameover() {
     gameover.style.position = "relative"
     gameover.style.fontSize = "30px"
     gameover.style.margin = "10px"
-    gameover.style.top = "25px"
+    gameover.style.top = `${windowWidth *.8}px`
     gameover.style.left = "0px"
-    gameover.style.width = windowWidth
-    gameover.style.height = windowHeight
+    gameover.style.width = `${windowWidth *.8}px`
+    gameover.style.height = `${windowHeight * .8}px`
     gameover.style.display = "flex"
     gameover.style.alignItems = "center"
     gameover.style.justifyContent = "center"
