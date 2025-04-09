@@ -23,6 +23,7 @@ let LPaddleSpeed = 10
 let LPaddleXPosition = 70
 let running = true
 
+
 let score = 0 // display score and increase score by 1 every time the ball hits the paddle
 let level = 1 // display level and increase the level by 1 every time the score increases by 10
 // as the levels increase, increase the ball speed
