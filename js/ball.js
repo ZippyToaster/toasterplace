@@ -107,6 +107,7 @@ function createDescription() {
     scoreholder.style.margin = "10px"
     scoreholder.style.top = "0px"
     scoreholder.style.right = "50px"
+    scoreholder.style.fontFamily = "Verdana,sans-serif"
     scoreholder.innerHTML = `Score: ${score}`
 
     levelholder.style.position = "absolute"
@@ -114,6 +115,7 @@ function createDescription() {
     levelholder.style.margin = "10px"
     levelholder.style.top = "50px"
     levelholder.style.right = "50px"
+    levelholder.style.fontFamily = "Verdana,sans-serif"
     levelholder.innerHTML = `Level: ${level}`
 }
 
@@ -127,8 +129,8 @@ function createGameover() {
     gameover.style.display = "flex"
     gameover.style.alignItems = "center"
     gameover.style.justifyContent = "center"
-    gameover.style.backgroundColor = "blue"
-    gameovertext.style.fontFamily = "arial,sans-serif"
+    gameover.style.backgroundColor = "grey"
+    gameovertext.style.fontFamily = "Verdana,sans-serif"
     gameovertext.innerHTML = `Score: ${score}`
 }
 
