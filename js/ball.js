@@ -132,6 +132,7 @@ function createGameover() {
     gameover.style.alignItems = "center"
     gameover.style.justifyContent = "center"
     gameover.style.backgroundColor = "grey"
+    gameover.style.borderRadius = "20px"
     gameovertext.style.fontFamily = "Verdana,sans-serif"
     gameovertext.innerHTML = `Game over! <br> you had a score of ${score} <br> you made it to level ${level}`
 }
