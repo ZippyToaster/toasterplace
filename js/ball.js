@@ -118,11 +118,12 @@ function createDescription() {
 }
 
 function createGameover() {
-    gameover.style.position = "absolute"
+    gameover.style.position = "relative"
     gameover.style.fontSize = "30px"
     gameover.style.margin = "10px"
-    gameover.style.top = "100px"
+    gameover.style.top = "250px"
     gameover.style.left = "0px"
+    gameover.style.height = "0%"
     gameover.style.display = "flex"
     gameover.style.alignItems = "center"
     gameover.style.justifyContent = "center"
