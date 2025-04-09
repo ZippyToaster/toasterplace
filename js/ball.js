@@ -82,7 +82,6 @@ function moveBall() {
 createBall()
 createLPaddle()
 createDescription()
-createGameover()
 
 function createBall() {
     ball.style.height = `${2 * ballRadius}px`
@@ -125,7 +124,7 @@ function createGameover() {
     gameover.style.position = "relative"
     gameover.style.fontSize = "30px"
     gameover.style.margin = "10px"
-    gameover.style.top = "250px"
+    gameover.style.top = "25px"
     gameover.style.left = "0px"
     gameover.style.width = windowWidth
     gameover.style.height = windowHeight
@@ -188,7 +187,7 @@ function animate() {
         requestAnimationFrame(animate)
     }
     else if (running == false) {
-
+        createGameover()
     }
 }
 animate()
