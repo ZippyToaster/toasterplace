@@ -12,6 +12,8 @@ body {
     align-items: center;
     margin: 0;
     font-family: 'Inconsolata', sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .title {

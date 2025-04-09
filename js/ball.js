@@ -27,6 +27,8 @@ let running = true
 
 document.body.style.alignItems = "center"
 document.body.style.justifyContent = "center"
+document.body.style.overflowY = "hidden"
+document.body.style.overflowX = "hidden"
 
 let score = 0 // display score and increase score by 1 every time the ball hits the paddle
 let level = 1 // display level and increase the level by 1 every time the score increases by 10
