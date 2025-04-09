@@ -25,6 +25,8 @@ let LPaddleSpeed = 10
 let LPaddleXPosition = 70
 let running = true
 
+document.body.style.alignItems = "center"
+document.body.style.justifyContent = "center"
 
 let score = 0 // display score and increase score by 1 every time the ball hits the paddle
 let level = 1 // display level and increase the level by 1 every time the score increases by 10
@@ -132,8 +134,6 @@ function createGameover() {
     gameover.style.justifyContent = "center"
     gameover.style.backgroundColor = "grey"
     gameovertext.style.fontFamily = "Verdana,sans-serif"
-    gameovertext.style.alignItems = "center"
-    gameovertext.style.justifyContent = "center"
     gameovertext.innerHTML = `Game over! <br> you had a score of ${score} <br> you made it to level ${level}`
 }
 
