@@ -119,6 +119,7 @@ function createGameover() {
     gameover.style.fontSize = "30px"
     gameover.style.margin = "10px"
     gameover.style.top = "100px"
+    gameover.style.left = "0px"
     gameover.style.alignItems = "center"
     gameover.style.justifyContent = "center"
     gameover.innerHTML = `Score: ${score}`
