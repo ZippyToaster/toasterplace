@@ -69,7 +69,7 @@ function moveBall() {
         (ballLeft <= LPaddleRight) &&
         (ballXDirection == -1)
     ) {
-        score += 5
+        score += 1
         scoreholder.innerHTML = `Score: ${score}`
         if (score % 10 == 0) {
             changeLevel()
