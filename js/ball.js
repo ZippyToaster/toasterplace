@@ -7,12 +7,12 @@ document.body.appendChild(scoreholder)
 const levelholder = document.createElement('p')
 document.body.appendChild(levelholder)
 let LPaddleWidth = 15
-let LPaddleHeight = 150
+let LPaddleHeight = 170
 const ballRadius = 30
 const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
 let ballXPosition = windowWidth / 2 - ballRadius
-let ballSpeed = 5
+let ballSpeed = 7.5
 let ballXDirection = 1
 let ballYPosition = windowHeight / 2 - ballRadius
 let ballYDirection = 1
@@ -111,8 +111,9 @@ function changeLevel() {
     levelholder.innerHTML = `Level: ${level}`
     ballSpeed += 1
     if (level % 2 == 1) {
-            LPaddleHeight -= 10
-    LPaddle.style.height = `${LPaddleHeight}px`
+        LPaddleHeight -= 10
+        LPaddleSpeed += 1
+        LPaddle.style.height = `${LPaddleHeight}px`
     }
 }
 
