@@ -123,6 +123,7 @@ function createGameover() {
     gameover.style.margin = "10px"
     gameover.style.top = "100px"
     gameover.style.left = "0px"
+    gameover.style.display = "flex"
     gameover.style.alignItems = "center"
     gameover.style.justifyContent = "center"
     gameover.style.backgroundColor = "blue"
