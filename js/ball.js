@@ -125,13 +125,16 @@ function createGameover() {
     gameover.style.margin = "10px"
     gameover.style.top = "250px"
     gameover.style.left = "0px"
-    gameover.style.height = "0%"
+    gameover.style.width = windowWidth
+    gameover.style.height = windowHeight
     gameover.style.display = "flex"
     gameover.style.alignItems = "center"
     gameover.style.justifyContent = "center"
     gameover.style.backgroundColor = "grey"
     gameovertext.style.fontFamily = "Verdana,sans-serif"
-    gameovertext.innerHTML = `Score: ${score}`
+    gameovertext.style.alignItems = "center"
+    gameovertext.style.justifyContent = "center"
+    gameovertext.innerHTML = `Game over! <br> you had a score of ${score} <br> you made it to level ${level}`
 }
 
 function changeLevel() {
