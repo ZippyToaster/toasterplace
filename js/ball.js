@@ -6,6 +6,8 @@ const scoreholder = document.createElement('p')
 document.body.appendChild(scoreholder)
 const levelholder = document.createElement('p')
 document.body.appendChild(levelholder)
+const gameover = document.createElement('p')
+document.body.appendChild(gameover)
 let LPaddleWidth = 15
 let LPaddleHeight = 170
 const ballRadius = 30
@@ -19,6 +21,7 @@ let ballYDirection = 1
 let LPaddleYPosition = windowHeight / 2 - LPaddleHeight / 2
 let LPaddleSpeed = 10
 let LPaddleXPosition = 70
+let running = true
 
 let score = 0 // display score and increase score by 1 every time the ball hits the paddle
 let level = 1 // display level and increase the level by 1 every time the score increases by 10
@@ -41,7 +44,9 @@ function moveBall() {
         ballYDirection = ballYDirection * -1
     }
 
-    //if (ballXPosition)
+    if (ballXPosition < 0){
+        running = false
+    }
 
     // if top of the ball is less than or equal to the top of the paddle and the bottom
     // of the ball is greater than or equal to the bottom of the paddle and the left
@@ -72,6 +77,7 @@ function moveBall() {
 createBall()
 createLPaddle()
 createDescription()
+createGameover()
 
 function createBall() {
     ball.style.height = `${2 * ballRadius}px`
@@ -106,6 +112,16 @@ function createDescription() {
     levelholder.style.top = "50px"
     levelholder.style.right = "50px"
     levelholder.innerHTML = `Level: ${level}`
+}
+
+function createGameover() {
+    gameover.style.position = "absolute"
+    gameover.style.fontSize = "30px"
+    gameover.style.margin = "10px"
+    gameover.style.top = "100px"
+    gameover.style.alignItems = "center"
+    gameover.style.justifyContent = "center"
+    gameover.innerHTML = `Score: ${score}`
 }
 
 function changeLevel() {
@@ -153,9 +169,14 @@ function moveLPaddle() {
 }
 
 function animate() {
-    moveBall()
-    moveLPaddle()
-    requestAnimationFrame(animate)
+    if (running == true) {
+        moveBall()
+        moveLPaddle()
+        requestAnimationFrame(animate)
+    }
+    else if (running == false) {
+
+    }
 }
 animate()
 
