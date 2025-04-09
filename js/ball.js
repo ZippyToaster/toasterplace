@@ -41,6 +41,8 @@ function moveBall() {
         ballYDirection = ballYDirection * -1
     }
 
+    //if (ballXPosition)
+
     // if top of the ball is less than or equal to the top of the paddle and the bottom
     // of the ball is greater than or equal to the bottom of the paddle and the left
     // side of the ball is less than or equal to the right side of the paddle, then
